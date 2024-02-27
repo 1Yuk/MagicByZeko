@@ -4,14 +4,11 @@
 
 <div class="parallax-container">
     <video autoplay muted loop id="videofondozeko">
-        <source src="../public/magicteaserproducts.mp4" type="video/mp4">
+        <source src="../public/magicteaserproducts.mp4" type="video/mp4" />
     </video>
     <div class="container-logo-magic">
         <div class="child-logo-magic">
-            <img src="../public/logomagic.png" alt="" class="logo-magic">
-        </div>
-        <div class="child-logo-magic">
-            
+            <img src="../public/logomagic.png" alt="logo-zeko" class="logo-magic" id="scrollinglogo"/>
         </div>
     </div>
 </div>
@@ -94,18 +91,21 @@
     }
 
     .child-logo-magic {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        transition: width 0.5s;
     }
 
     .logo-magic {
-        width: 50%;
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
+    .logo.small {
+        width: 30%;
+    }
 </style>
-﻿
-᲼
-1yuuki
-https://youtu.be/_uoovWo4uUA

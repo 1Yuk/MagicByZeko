@@ -1,0 +1,89 @@
+---
+---
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Ayuda</a></li>
+    </ul>
+    <figure class="logo-container">
+        <img src="../public/logozeko.png" alt="" class="logo-zeko">
+    </figure>
+    <ul class="nav-links">
+        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-cloud-moon"></i></a></li>
+    </ul>
+</nav>
+
+<style>
+   body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; 
+    }
+
+    nav {
+        background-color: rgb(248, 248, 248);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 250px; 
+        align-items: center;
+        width: 100%; 
+        box-sizing: border-box;
+        position: fixed;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        height: 35px;
+    }
+
+    .logo-zeko {
+        width: 2.5rem;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    i {
+        font-size: 1.8rem;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            margin-top: 10px; 
+        }
+
+        .nav-links li {
+            margin: 10px 0; 
+        }
+    }
+</style>

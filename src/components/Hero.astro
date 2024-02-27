@@ -4,107 +4,108 @@
 
 
 
-    <header>
-        <a href="#" class="logo"><img src="../public/logomagic.png" alt="" class="zeko-magic"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="zona1">
-        <video autoplay muted loop id="videofondozeko">
-            <source src="../public/magicteaserproducts.mp4" type="video/mp4">
-        </video>
-    </section>
-    <section>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </section>
+<header>
+    <a href="#" class="logo">
+        <img class="zeko-magic" src="../public/logomagic.png" alt=""></a>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="zona1">
+    <video autoplay muted loop id="videofondozeko">
+        <source src="../public/magicteaserproducts.mp4" type="video/mp4">
+    </video>
+</section>
+<section>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</section>
 
-    <style>
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            transition: 0.7s;
-            padding: 30px 20px;
-            z-index: 10;
-        }
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        transition: 0.7s;
+        padding: 30px 20px;
+        z-index: 10;
+    }
 
-        header.abajo {
-            background: #fff;
-            padding: 15px 20px;
-        }
+    header.abajo {
+        background: #fff;
+        padding: 15px 20px;
+    }
 
-        header.abajo .logo {
-            color: #ffffff; 
-        }
+    header.abajo .logo {
+        filter: grayscale(100%) invert(1);
+    }
 
-        header .logo {
-            position: relative;
-            font-weight: bold;
-            font-size: 2em;
-            letter-spacing: 2px;
-            transition: 1.5s;
-            text-decoration: none;
-        }
+    header .logo {
+        position: relative;
+        font-weight: bold;
+        font-size: 2em;
+        letter-spacing: 2px;
+        transition: 1.5s;
+        text-decoration: none;
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        header ul {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    header ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        header ul li {
-            list-style: none;
-        }
+    header ul li {
+        list-style: none;
+    }
 
-        header ul li a {
-            position: relative;
-            font-family: helvetica;
-            margin: 0 15px;
-            text-decoration: none;
-            color: #fff;
-            letter-spacing: 2px;
-            font-weight: 600;
-            transition: 0.7s;
-        }
+    header ul li a {
+        position: relative;
+        font-family: helvetica;
+        margin: 0 15px;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: 600;
+        transition: 0.7s;
+    }
 
-        header.abajo ul li a {
-            color: #000; 
-        }
+    header.abajo ul li a {
+        color: #000; 
+    }
 
-        .zeko-magic {
-            width: 8.5rem;
-            height: 2.8rem;
-            object-fit: contain;
-        }
+    .zeko-magic {
+        width: 8.5rem;
+        height: 2.8rem;
+        object-fit: contain;
+    }
 
-        .zona1 video {
-            height: 100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-    </style>
+    .zona1 video {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+</style>
 
 <script type="text/javascript">
     window.addEventListener("scroll", function(){

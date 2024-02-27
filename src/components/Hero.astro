@@ -2,110 +2,113 @@
 
 ---
 
-<div class="parallax-container">
-    <video autoplay muted loop id="videofondozeko">
-        <source src="../public/magicteaserproducts.mp4" type="video/mp4" />
-    </video>
-    <div class="container-logo-magic">
-        <div class="child-logo-magic">
-            <img src="../public/logomagic.png" alt="logo-zeko" class="logo-magic" id="scrollinglogo"/>
-        </div>
-    </div>
-</div>
 
-<div class="sample-section">
-    <h2>Galeria</h2>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab numquam
-        eveniet molestias veniam, inventore sint voluptates nam provident
-        impedit laborum ipsa vel quos amet laboriosam dolorum suscipit! Nihil
-        eos repellendus blanditiis repellat laboriosam veniam quod maxime ab! Ea
-        eveniet doloremque, excepturi totam, et molestias dicta accusamus
-        quibusdam quas sunt inventore!
-    </p>
-</div>
 
-<div class="sea2"></div>
+    <header>
+        <a href="#" class="logo"><img src="../public/logomagic.png" alt="" class="logo-magic"></a>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="zona1">
+        <video autoplay muted loop id="videofondozeko">
+            <source src="../public/magicteaserproducts.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </section>
 
-<div class="sea3"></div>
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            transition: 0.7s;
+            padding: 30px 20px;
+            z-index: 10;
+        }
 
-<style>
-    .parallax-container {
-        position: relative;
-        overflow: hidden;
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        header.abajo {
+            background: #fff;
+            padding: 15px 20px;
+        }
 
-    #videofondozeko {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: brightness(70%);
-    }
+        header.abajo .logo {
+            color: #000; 
+        }
 
-    .parallax-container h1 {
-        font-weight: bold;
-        font-size: 6rem;
-        color: white; /* Cambia el color del texto según tu diseño */
-        z-index: 1;
-    }
+        header .logo {
+            position: relative;
+            font-weight: bold;
+            font-size: 2em;
+            letter-spacing: 2px;
+            transition: 1.5s;
+            text-decoration: none;
+            filter: brightness(1) invert(75%);
+        }
 
-    .sample-section {
-        padding: 2.5rem;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .sample-section h2 {
-        font-weight: bold;
-        font-size: 2.5rem;
-    }
+        header ul {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .sea2,
-    .sea3 {
-        min-height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+        header ul li {
+            list-style: none;
+        }
 
-    .sea2 {
-        background-image: url("../public/fotopadmagicred.png");
-    }
+        header ul li a {
+            position: relative;
+            font-family: helvetica;
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: 600;
+            transition: 0.7s;
+        }
 
-    .sea3 {
-        background-image: url("../public/fotopadmagicred.png");
-    }
+        header.abajo ul li a {
+            color: #000; 
+        }
 
-    .container-logo-magic {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
+        .logo-magic {
+            width: 8.5rem;
+            height: 2.8rem;
+            object-fit: contain;
+        }
 
-    .child-logo-magic {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 60%;
-        transition: width 0.5s;
-    }
+        .zona1 video {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 
-    .logo-magic {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .logo.small {
-        width: 30%;
-    }
-</style>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo",window.scrollY>0);
+    })
+</script>
